@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
 })
 
 export class CuerpoComponent {
+  mostrar = true;
 
+  informacion = {
+    autor: 'Cristiano Ronaldo',
+    frase: 'SIUUUUUUUU'
+  };
+
+  personajes = ['Chabelo','Babo','Goku'];
 }
