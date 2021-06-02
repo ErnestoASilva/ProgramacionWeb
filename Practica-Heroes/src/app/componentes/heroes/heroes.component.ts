@@ -8,10 +8,10 @@ import { Heroe, HeroesService } from 'src/app/servicios/heroes.service';
 })
 export class HeroesComponent implements OnInit {
 
-  heroes: Array <Heroe> =[]
+  heroes: Array<Heroe> =[]
 
-  constructor(private servicoHeroes: HeroesService) { 
-    this.heroes = this.servicoHeroes.getHeroes();
+  constructor(private servicioHeroes: HeroesService) { 
+    this.heroes = this.servicioHeroes.getHeroes();
   }
 
   ngOnInit(): void {
