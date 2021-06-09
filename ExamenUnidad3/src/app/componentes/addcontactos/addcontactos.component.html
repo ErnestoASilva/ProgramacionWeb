@@ -1,0 +1,106 @@
+<div class="m-3">
+    <h1>Añadir Contacto</h1>
+    <form autocomplete="off" [formGroup]="formulario" (ngSubmit)="guardar()">
+        <div class="row">
+            <div class="col-6">
+                Nombre(*)
+                    <div>
+                    <input class="form-control" 
+                    type="text" 
+                    placeholder="Escribe un nombre"
+                    formControlName = "nombre"
+                    >
+                    </div>
+            </div>
+            <div class="col-6">
+                Apellidos(*)
+                    <div>
+                    <input class="form-control" 
+                    type="text" 
+                    placeholder="Escribe tus apellidos"
+                    formControlName = "apellidos"
+                    >
+                    </div>
+            </div>
+        </div>
+        <p> </p>
+    
+        <div class="row">
+            <div>
+                Descripcion Contacto
+            </div>
+            <div>
+            <input class="form-control" 
+            type="text" 
+            placeholder="Escribe una descripcion del contactos"
+            formControlName = "descrpcion"
+            >
+            </div>
+        </div>
+    
+        <p> </p>
+        <div class="row">
+            <div class="col-6">
+                Sexo
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputGroupSelect01"></label>
+                    <select class="form-select" id="inputGroupSelect01" 
+                    formControlName = "genero">
+                      <option selected>Escoge...</option>
+                      <option value="Masculino">Hombre</option>
+                      <option value="Femenino">Mujer</option>
+                    </select>
+                  </div>
+            </div>
+            <div class="col-6">
+                Empresa
+                    <div>
+                    <input class="form-control" 
+                    type="text" 
+                    placeholder="Escribe el nombre de su empresa"
+                    formControlName = "empresa"
+                    >
+                    </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-6">
+                Email
+                    <div>
+                    <input class="form-control" 
+                    type="text" 
+                    placeholder="Escribe tu email"
+                    formControlName = "email"
+                    >
+                    </div>
+            </div>
+            <div class="col-6">
+                Telefono
+                    <div>
+                    <input class="form-control" 
+                    type="number" 
+                    placeholder="Escribe un telefono"
+                    formControlName = "telefono"
+                    >
+                    </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <p> </p>
+            <button type="submit" class="btn btn-outline-primary btn-block">Añadir Contacto</button>
+           
+        </div>
+    </form>
+
+        
+  
+
+       
+  
+    
+    
+</div>
+
+

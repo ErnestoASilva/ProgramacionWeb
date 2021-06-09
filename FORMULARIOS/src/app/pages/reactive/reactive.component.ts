@@ -33,7 +33,7 @@ export class ReactiveComponent implements OnInit {
       correo: 'netp@gmail.com'
     });
   }
-
+ 
   guardar(){
     if(this.formulario.valid){
       console.log( this.formulario.value );
